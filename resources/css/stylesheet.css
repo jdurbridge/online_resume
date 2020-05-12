@@ -113,28 +113,32 @@ ul {
     line-height: 1rem;
   }
 
+  .card_pic {
+    width: 100%;
+}
+
 /* SECTIONS -----------------------------  */ 
 
 /* cover */
 .cover {
+    width: 100%;
+}
+.cover .cover_image {
+    background-image: url("resources/images/banner.jpg");
+    background-size: cover;
+    background-position: center;
     background-color: #d8d8d8;
     width: 100%;
-    display: flex;
 }
 
-
-
-/* Work */
-.work h1 {
+.cover h1 {
     text-align: center;
+    width: 60%;
 }
 
-.case {
-    display: flex;
-    flex-direction: column;
-}
 
-/* Thesis */ 
+
+/* Resume */ 
 .resume h1 {
     text-align: center;
 }
@@ -142,6 +146,26 @@ ul {
 .resume {
     width: 100%;
     padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Work */
+.work h1 {
+    text-align: center;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Articles */
+.articles h1 {
+    text-align: center;
+}
+
+.articles {
     display: flex;
     flex-direction: column;
 }
@@ -211,8 +235,21 @@ ul {
         flex-shrink: 1;
     }
 
+    .profile_left {
+        width: 30%;
+        padding: 2rem 1.5rem;
+        flex-grow: 1;
+        flex-shrink: 1; 
+    }
+
     .right {
         width: 40%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .profile_right {
+        width: 70%;
         flex-grow: 1;
         flex-shrink: 1;
     }
@@ -241,57 +278,10 @@ ul {
         line-height: 3rem;
     }
 
-    .cover .pic img {
-        width: 100%;
-    }
-
-    .cover .description {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-
-    /* Work*/
-
-    .cases { 
-        background-color: #d8d8d8;
-        padding: 2rem 3.5rem;
-    }
-
-    .cases .work {
-        width: 30%;
-        background-color: white;
-        flex-grow: 1;
-        flex-shrink: 1;
-        margin: 0 1rem;
-    }
-
-    .cases .up_row,
-    .cases .down_row {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .cases .up_row {
-        margin-bottom: 2rem;
-    }
-
-    .cases .work .pic {
-        width: 100%;
-    }
-
-    .cases .work .pic img {
-        width: 100%;
-    }
-
-    .cases .description {
-        padding: 0 1rem;
-    }
 
     /* Resume */
 
-    .reume_content {
+    .resume_content {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -319,6 +309,90 @@ ul {
         width: 100%;
         height: auto;
     }
+
+    /* Work*/
+
+    .work { 
+        background-color: #d8d8d8;
+        padding: 2rem 3.5rem;
+    }
+
+    .work .case {
+        width: 30%;
+        background-color: white;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin: 0 1rem;
+    }
+
+    .work .up_row,
+    .work .down_row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .work .up_row {
+        margin-bottom: 2rem;
+    }
+
+    .work .case .pic {
+        width: 100%;
+    }
+
+    .work .case .pic img {
+        width: 100%;
+    }
+
+    .case .description {
+        padding: 0 1rem;
+    }
+
+    
+
+    /* Articles */
+
+    .articles { 
+        background-color: #ffffff;
+        padding: 2rem 3.5rem; 
+    }
+
+    .articles .case {
+        width: 25%;
+        background-color: white;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin: 0 1rem;
+    }
+
+    .articles .up_row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .articles .up_row {
+        margin-bottom: 2rem;
+    }
+
+    .articles .case .pic {
+        width: 100%;
+    }
+
+    .articles .case .pic img {
+        width: 100%;
+    }
+
+
+    /* Contact */
+
+    .contact {
+        text-align: center;
+        background-color: #d8d8d8;
+    }
+
+    .contact_content {
+        padding: 2rem;
+    }
+    
 }
 
 /* MOBILE ---------------------------------- */
@@ -373,19 +447,6 @@ ul {
         padding-bottom: 2rem;
     }
 
-    .cover .pic {
-        width: 100%;
-    }
-
-    .cover .pic img {
-        width:100%;
-    }
-        
-    .cover .description {  
-        padding: 0 1rem;
-    }
-
-    
 
     /* Work */
     .work {
@@ -398,7 +459,7 @@ ul {
         flex-direction: column;
     }
 
-    .case .work {
+    .work .case {
         background-color: #d8d8d8;
         padding: 1rem 1rem 1.5rem 1rem;
     }
