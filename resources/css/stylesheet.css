@@ -129,7 +129,7 @@ ul {
     text-align: center;
 }
 
-.cases {
+.case {
     display: flex;
     flex-direction: column;
 }
