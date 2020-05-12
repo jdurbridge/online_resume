@@ -1,0 +1,463 @@
+/* UNIVERSAL STYLE ---------------------- */
+
+body {
+    background-color: #ffffff;
+    color: #303030;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 16px;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    padding: 1rem 1.5rem;
+    position: relative;
+    top: 4rem;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #d8d8d8;
+}
+
+/* BOTH DEVICES ------------------------ */
+/* Layout */
+
+header {
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 64px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    position: relative;
+    top: 4rem;
+}
+
+/* Patterns */
+
+button {
+    height: 4rem;
+    background-color: #303030;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    flex-shrink: 1;
+    border-radius: 2px;
+}
+
+.white {
+    background-color: white;
+}
+
+.dark {
+    background-color: #d8d8d8;
+}
+
+/* Text styles */
+
+h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+h3 {
+    font-size: 1rem;
+    color: grey;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: lighter;
+}
+
+.caption {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #303030;
+    line-height: 1rem;
+  }
+  
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1rem;
+  }
+
+/* SECTIONS -----------------------------  */ 
+
+/* cover */
+.cover {
+    background-color: #d8d8d8;
+    width: 100%;
+    display: flex;
+}
+
+
+
+/* Work */
+.work h1 {
+    text-align: center;
+}
+
+.cases {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Thesis */ 
+.resume h1 {
+    text-align: center;
+}
+
+.resume {
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* DESKTOP ---------------------------------- */
+@media only screen and (min-width: 801px) {
+    .mobile {
+        display: none;
+    }
+
+
+    /* Patterns */
+    button {
+        width: 20rem;
+    }
+
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #logo {
+        height: 4rem;
+        margin: 0 1.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+
+
+    nav {
+        height: 4rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right:1.5rem;
+    }
+
+    li {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer .links a {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    /* Layout patterns */
+    .left {
+        width: 60%;
+        padding: 2rem 1.5rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .right {
+        width: 40%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .card_pic .pic {
+        width: 35%;
+        padding: 1rem;
+    }
+
+    .card_pic .description {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card_pic .description h2 {
+        line-height: normal;
+        margin: 0;
+    }
+
+    /* Sections */
+    /* Cover */
+    .cover h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .cover .pic img {
+        width: 100%;
+    }
+
+    .cover .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    /* Work*/
+
+    .cases { 
+        background-color: #d8d8d8;
+        padding: 2rem 3.5rem;
+    }
+
+    .cases .work {
+        width: 30%;
+        background-color: white;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin: 0 1rem;
+    }
+
+    .cases .up_row,
+    .cases .down_row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cases .up_row {
+        margin-bottom: 2rem;
+    }
+
+    .cases .work .pic {
+        width: 100%;
+    }
+
+    .cases .work .pic img {
+        width: 100%;
+    }
+
+    .cases .description {
+        padding: 0 1rem;
+    }
+
+    /* Resume */
+
+    .reume_content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .resume_content .featured {
+        padding-top: 0;
+    }
+
+    .resume_content .featured .pic {
+        width: 100%;
+    }
+
+    .resume_content .featured .pic video {
+        width: 100%;
+    }
+
+    .resume_content .others .card_pic {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .resume_content .others .card_pic img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* MOBILE ---------------------------------- */
+
+@media only screen and (max-width: 800px) {
+    .desktop {
+        display: none;
+    }
+
+    /* Patterns */
+    button {
+        width: 100%;
+    }
+
+    .dark {
+        background-color: white;
+    }
+
+    /* Text styles */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        line-height: 1.6rem;
+    }
+
+
+    /* Header */
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 1.5rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /* Footer */ 
+    footer {
+        padding-top: 2.5rem;
+    }
+
+    footer .links {
+        display: none;
+    }
+
+    /* Sections */
+    /* Cover */ 
+    .cover {
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+
+    .cover .pic {
+        width: 100%;
+    }
+
+    .cover .pic img {
+        width:100%;
+    }
+        
+    .cover .description {  
+        padding: 0 1rem;
+    }
+
+    
+
+    /* Work */
+    .work {
+        margin-bottom: 1.5rem;
+    }
+
+    .work .up_row,
+    .work .down_row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .case .work {
+        background-color: #d8d8d8;
+        padding: 1rem 1rem 1.5rem 1rem;
+    }
+
+    .case .pic {
+        display:none;
+    }
+
+    .case .description h3,
+    .case .description p {
+        display: none;
+    }
+
+    /* Thesis */
+    .thesis .others {
+        display: none;
+    }
+
+    .thesis .featured {
+        width: 100%
+    }
+
+    .thesis .featured video {
+        width: 100%;
+    }
+
+    .thesis .featured .description {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
