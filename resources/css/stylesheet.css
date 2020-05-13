@@ -25,7 +25,7 @@ footer {
 /* Layout */
 
 header {
-    background-color: white;
+    background-color: #ffffff;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -43,14 +43,20 @@ main {
 
 /* Patterns */
 
-button {
+.button {
     height: 4rem;
     background-color: #303030;
     color: white;
-    border: none;
+    border: solid;
     font-size: 1.2rem;
     flex-shrink: 1;
     border-radius: 2px;
+}
+
+.button:hover {
+    background-color: #303030;
+    border-color: #4bffa5;
+    color: #4bffa5;
 }
 
 .white {
@@ -78,6 +84,7 @@ h3 {
     color: grey;
     text-transform: uppercase;
     font-weight: lighter;
+
 }
 
 p {
@@ -114,26 +121,35 @@ ul {
   }
 
   .card_pic {
-    width: 100%;
-}
+    padding: 1rem;
+    margin: 2rem;
+    text-align: left;
+  }
+
+
+
+
 
 /* SECTIONS -----------------------------  */ 
 
 /* cover */
 .cover {
-    width: 100%;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
 }
-.cover .cover_image {
-    background-image: url("resources/images/banner.jpg");
-    background-size: cover;
-    background-position: center;
-    background-color: #d8d8d8;
-    width: 100%;
+
+.hover_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .cover h1 {
-    text-align: center;
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
 }
 
 
@@ -235,11 +251,13 @@ ul {
         flex-shrink: 1;
     }
 
-    .profile_left {
+    .third {
         width: 30%;
         padding: 2rem 1.5rem;
         flex-grow: 1;
         flex-shrink: 1; 
+        top: 0;
+        text-align: center;
     }
 
     .right {
@@ -248,11 +266,6 @@ ul {
         flex-shrink: 1;
     }
 
-    .profile_right {
-        width: 70%;
-        flex-grow: 1;
-        flex-shrink: 1;
-    }
 
     .card_pic .pic {
         width: 35%;
@@ -261,6 +274,13 @@ ul {
 
     .card_pic .description {
         width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .third .card_pic .description {
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -287,28 +307,13 @@ ul {
         flex-direction: row;
     }
 
-    .resume_content .featured {
-        padding-top: 0;
-    }
-
-    .resume_content .featured .pic {
-        width: 100%;
-    }
-
-    .resume_content .featured .pic video {
-        width: 100%;
-    }
-
     .resume_content .others .card_pic {
         padding: 0;
         display: flex;
         flex-direction: row;
     }
 
-    .resume_content .others .card_pic img {
-        width: 100%;
-        height: auto;
-    }
+
 
     /* Work*/
 
@@ -386,7 +391,8 @@ ul {
 
     .contact {
         text-align: center;
-        background-color: #d8d8d8;
+        color: #303030;
+        background-color: #4bffa5;
     }
 
     .contact_content {
@@ -473,22 +479,11 @@ ul {
         display: none;
     }
 
-    /* Thesis */
-    .thesis .others {
+    /* Resume */
+    .resume .others {
         display: none;
     }
 
-    .thesis .featured {
-        width: 100%
-    }
-
-    .thesis .featured video {
-        width: 100%;
-    }
-
-    .thesis .featured .description {
-        display: none;
-    }
 }
 
 
