@@ -468,7 +468,12 @@ li {
         align-items: center;
         margin: 0 1.5rem;
         width: 100%;
-        justify-content: space-between;
+        
+    }
+
+    .mobile a {
+        font-size: 2rem;
+        margin-left: 3rem;
     }
 
     /* Footer */ 
