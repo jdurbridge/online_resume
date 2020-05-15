@@ -49,7 +49,7 @@ main {
     font-size: 1.2rem;
     flex-shrink: 1;
     border-radius: 2px;
-    margin: 2rem;
+    margin: 2rem 0;
 }
 
 .button:hover {
@@ -111,11 +111,6 @@ p {
     font-weight: lighter;
 }
 
-.caption {
-    font-size: 0.9rem;
-    line-height: 1rem;
-    font-weight: 700;
-}
 
 a {
     text-decoration: none;
@@ -164,7 +159,37 @@ ul {
     max-width: 500px;
 }
 
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+#logo {
+    height: 4rem;
+    margin: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+
+nav {
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right:1.5rem;
+}
+
+li {
+    margin-left: 1rem;
+    font-size: 1rem;
+}
 
 /* Resume */ 
 .resume h1 {
@@ -215,49 +240,12 @@ ul {
     line-height: 4em;
 }
 
-/* DESKTOP ---------------------------------- */
-@media only screen and (min-width: 801px) {
-    .mobile {
-        display: none;
-    }
-
-
-    /* Patterns */
+/* Patterns */
     button {
         width: 20rem;
-    }
+}
 
-    /* Header */
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    #logo {
-        height: 4rem;
-        margin: 0 1.5rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-transform: uppercase;
-        font-size: 1.2rem;
-    }
-
-
-    nav {
-        height: 4rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        margin-right:1.5rem;
-    }
-
-    li {
-        margin-left: 1rem;
-        font-size: 1rem;
-    }
+    
 
     /* Footer */
     footer {
@@ -331,12 +319,6 @@ ul {
 
     .resume_content {
         width: 100%;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .resume_content .others .card_pic {
-        padding: 0;
         display: flex;
         flex-direction: row;
     }
@@ -424,6 +406,12 @@ ul {
         padding: 1rem;
         display: flex;
         flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
     }
 
     .contact_content {
@@ -434,34 +422,35 @@ ul {
     .contact_content a:hover {
         color: #ffffff;
     }
-    
-}
 
 /* MOBILE ---------------------------------- */
+
+
 
 @media only screen and (maxwidth: 1200px) {
     /* card H3 shrink */
     /* CTA buttton starts to move out of place */
 }
 
+@media only screen and (min-width: 800px) {
+    .mobile {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 800px) {
+
     .desktop {
         display: none;
     }
+    
 
-    video {
-        display: none;
-    }
     /* Patterns */
     button {
         width: 100%;
     }
 
-    .dark {
-        background-color: white;
-    }
-
+    
     /* Text styles */
     h1 {
         font-size: 2.5rem;
@@ -496,27 +485,51 @@ ul {
     .cover {
         flex-direction: column;
         padding-bottom: 2rem;
+        width: 100%;
+        top: -120px;
     }
 
+    .resume {
+        width: 100%;
+    }
+
+    .third-left {
+        display: none;
+    }
+
+    .third-right {
+        display: none;
+    }
+
+    .third-middle {
+        width:100%;
+    }
 
     /* Work */
     .work {
         margin-bottom: 1.5rem;
+        margin-left: 0px;
+        padding-left: 0px;
     }
 
+    .work h1 {
+        text-align: center;
+    }
     .work .up_row,
     .work .down_row {
         display: flex;
         flex-direction: column;
+        
     }
 
     .work .case {
         background-color: #d8d8d8;
         padding: 1rem 1rem 1.5rem 1rem;
+        width: 100%;
     }
 
     .case .pic {
-        display:none;
+       width: 100%;
     }
 
     .case .description h3,
@@ -524,11 +537,38 @@ ul {
         display: none;
     }
 
-    /* Resume */
-    .resume .others {
+    /* Articles  */
+
+    .articles {
+        margin-bottom: 1.5rem;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    .articles .case {
+        width: 100%;
+        padding: 1rem 1rem 1.5rem 1rem;
+    }
+
+    .articles .up_row {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+
+    /* Contact */
+
+    .contact-container {
+        display: inline;
+    }
+
+    .contact_content span {
         display: none;
     }
 
+    .contact_content i {
+        font-size: 3rem;
+    }
 }
 
 
