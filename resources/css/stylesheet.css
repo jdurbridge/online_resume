@@ -21,8 +21,6 @@ footer {
     border-top: 1px solid #d8d8d8;
 }
 
-/* BOTH DEVICES ------------------------ */
-/* Layout */
 
 header {
     background-color: #ffffff;
@@ -51,6 +49,7 @@ main {
     font-size: 1.2rem;
     flex-shrink: 1;
     border-radius: 2px;
+    margin: 2rem;
 }
 
 .button:hover {
@@ -66,6 +65,18 @@ main {
 .dark {
     background-color: #d8d8d8;
 }
+
+.card_pic {
+    padding: 1rem;
+    margin: 2rem;
+    text-align: left;
+  }
+
+  .pic:hover {
+    filter: brightness(50%);
+   
+  }
+
 
 /* Text styles */
 
@@ -120,23 +131,24 @@ ul {
     line-height: 1rem;
   }
 
-  .card_pic {
-    padding: 1rem;
-    margin: 2rem;
-    text-align: left;
+  li a:hover {
+      color: #4bffa5;
   }
-
-
-
-
+ 
+  footer a:hover {
+      color: #4bffa5;
+  }
 
 /* SECTIONS -----------------------------  */ 
 
 /* cover */
 .cover {
     position: relative;
+    top: -200px;
+    margin-bottom: -200px;
     text-align: center;
     color: #ffffff;
+    
 }
 
 .hover_text {
@@ -162,6 +174,7 @@ ul {
 .resume {
     width: 100%;
     padding-top: 2rem;
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -186,6 +199,21 @@ ul {
     flex-direction: column;
 }
 
+
+/* Article pages */
+
+.article-main  {
+    background-color: #d8d8d8;
+    width: 100%;
+    margin: -50px 0;
+}
+.article-page {
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+    margin: 4rem 12rem;
+    line-height: 4em;
+}
 
 /* DESKTOP ---------------------------------- */
 @media only screen and (min-width: 801px) {
@@ -393,21 +421,38 @@ ul {
         text-align: center;
         color: #303030;
         background-color: #4bffa5;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .contact_content {
-        padding: 2rem;
+        display: inline;
+        margin: 1rem;
+    }
+
+    .contact_content a:hover {
+        color: #ffffff;
     }
     
 }
 
 /* MOBILE ---------------------------------- */
 
+@media only screen and (maxwidth: 1200px) {
+    /* card H3 shrink */
+    /* CTA buttton starts to move out of place */
+}
+
+
 @media only screen and (max-width: 800px) {
     .desktop {
         display: none;
     }
 
+    video {
+        display: none;
+    }
     /* Patterns */
     button {
         width: 100%;
