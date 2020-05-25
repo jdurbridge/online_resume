@@ -1,0 +1,64 @@
+/* BURGER MENU */ 
+header .menu-icon {
+    padding: 1.75rem;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+header .menu-icon .nav-icon { 
+    background: #E9DF8B;
+    display: block;
+    height: 2px;
+    width: 40px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+header .menu-icon .nav-icon:before,
+header .menu-icon .nav-icon:after {
+    background: #E9DF8B;
+    content:"";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 10px;
+ }
+
+ header .menu-icon .nav-icon:after {
+    top: -10px;
+ }
+
+ header .menu-icon .nav-icon:before {
+    top: 10px;
+ }
+
+ header .menu-btn {  /* The checkbox */
+     display: none;
+ }
+
+ header .menu-btn:checked ~ ul {  /* menu checked state */
+     min-height: 100vh;
+     min-width: 100vw;
+     padding: 2rem 0;
+     background-color: #22223B;
+ }
+
+ header .menu-btn:checked ~ .menu-icon .nav-icon { /* Middle line */
+    background: transparent;
+ }
+
+ header .menu-btn:checked ~ .menu-icon .nav-icon:before { /* bottom line */
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon:after { /* top line */
+    transform: rotate(45deg);
+    top: 0;
+}
+
+

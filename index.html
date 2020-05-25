@@ -6,236 +6,145 @@
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <title>Joe Dubridge Online Resume</title>
         <link rel="stylesheet" type="text/css" href="resources/css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/menu.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/36493425e0.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
         <!--HEADER-->
         <header>
-            <div class="desktop" id=logo>
-                <a href="/Users/joedurbridge/Documents/Projects/Online_resume/index.html"><span class="bold">Joe</span><span class="light"> Durbridge</span></a>
+            <div class="logo">
+                <a href="/Users/joedurbridge/Documents/Projects/Online_resume/index.html">JoeDurbridge</a>
             </div>
-            <nav class="desktop">
+            <nav>
+                <input class="menu-btn" type="checkbox" id="menu-btn"/>
+                <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
                 <ul>
-                    <li><a href="#work_section">Work</a></li>
-                    <li><a href="#articles_section">Articles</a></li>
-                    <li><a href="#contact_section">Contact</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                    <li><a href="#work-section">Work</a></li>
+                    <li><a href="#articles-section">Articles</a></li>
+                    <li><a href="#resume-section">Resume</a></li>
                 </ul>
             </nav>
-            <nav class="mobile">
-                    <a href="#work_section"><i class="fas fa-briefcase"></i></a>
-                    <a href="#articles_section"><i class="fas fa-newspaper"></i></a>
-                    <a href="#contact_section"><i class="fas fa-id-card"></i></a>
-            </nav>  
         </header>
 
-        <!--MAIN-->
         <main>
 
-            <!--COVER-->
-            <section class="cover">
-                    <video autoplay loop style="width: 100%">
-                        <source src="resources/videos/video.mp4" alt="space video">
-                    </video>
-                    <h1 class="hover_text">Experienced Marketer</h1>
+            <!--HERO SECTION-->
+            <section class="hero">
+                <div>   
+                    <h1>Online portfolio</h1>  
+                </div>
+                <div>
+                    <h2>A collection of projects i've worked on and articles i've written</h2>
+                </div>
+                <div>
+                    <a href="#contact-section"><button class="button" type="button" name="button">Explore</button></a>
+                </div>
             </section>
 
-            <!--RESUME SECTION-->
-            <section class="resume">
-                <h1>Hey. Welcome to my website.</h1>
-                <article class="resume_content">
-                    <div class="third third-left">          
-                    </div>
-                    <div class="third third-middle">                        
-                            <p>I'm Joe and this site is a live portfolio for all of the marketing projects I've delivered, along with articles I've written about retail marketing.</p>
-                            <p>Have a look around and feel free to take a look at my resume. Just hit the button below.</P>
-                            <a href="resources/documents/Joe Dubridge CV 2020.pdf"><button class="button" type="button" name="button">View My Resume</button></a>
-                            </div>               
-                    <div class="third third-right">       
-                    </div>
-                </article>
+            <div class="vector-image">
+                <img src="resources/images/Vector-shape.svg" alt="">
+            </div>
+                               
+            <!--CONTACT SECTION-->
+            <section class="contact" id="contact-section">
+                    <h1>Contact</h1>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/joe-durbridge-542b3323/">LinkedIn: jdurbridge</a></li>
+                            <li><p>Mobile: 07977 449 081</p></li>
+                            <li><a href="https://github.com/jdurbridge/jdurbridge.github.io">GitHub: jdurbridge</a></li>
+                            <li><a href="mailto:jdurbridge@me.com">Email: jdurbridge@me.com</a></li>
+                        </div>        
             </section>
-    
+
 
             <!--WORK SECTION-->
 
-            <section class="work" id="work_section">
-                <h1>Work case studies</h1>
+            <section class="work" id="work-section">
+                <h1>Work</h1>
     
-                <div class="up_row">
-                    <div class="case">
-                        <div class="pic">
-                            <a href="https://bwpgroup.com/work/ikea">
-                                <img src="resources/images/ikea.jpg" alt="ikea">
-                            </a>
-                        </div>
-                        <div class="description">
-                            <h2>IKEA</h2>
-                            <h3>Raising student awareness</h3>
-                            <p>Experiential campaign, Brand positioning</p>
-                        </div>
+                <div class="work-row">
+                    <div class="work-box-mobile">
+                        <a href="https://bwpgroup.com/work/ikea">
+                            <img src="resources/images/ikea.jpg" alt="ikea">
+                        </a>
+                        <h3>IKEA</h3>
+                        <p>Raising student awareness</p>
                     </div>
-    
-                    <div class="case">
-                        <div class="pic">
-                            <a href="https://bwpgroup.com/work/docks-bruxsel">
-                                <img src="resources/images/docks.jpg" alt="docks">
-                            </a>
-                        </div>
-                        <div class="description">
-                            <h2>Docks Bruxsel</h2>
-                            <h3>Driving footfall</h3>
-                            <p>Brand strategy, campaign delivery, web development</p>
-                        </div>
-                    </div>
-    
-                    <div class="case">
-                        <div class="pic">
-                            <a href="https://bwpgroup.com/work/polaroid-boxpark">
-                                <img src="resources/images/polaroid.jpg" alt="Polaroid">
-                            </a>
-                        </div>
-                        <div class="description">
-                            <h2>Polaroid</h2>
-                            <h3>Celebrating brand heritage</h3>
-                            <p>Experiential marketing, social media campaign</p>
-                        </div>
+                    <div class="work-box-mobile">
+                        <a href="https://bwpgroup.com/work/docks-bruxsel">
+                            <img src="resources/images/docks.jpg" alt="docks">
+                        </a>
+                        <h3>Docks Bruxsel</h3>
+                        <p>Driving footfall</p>
                     </div>
                 </div>
-                <div class="down_row">
-                    <div class="case">
-                        <div class="pic">
-                            <a href="https://bwpgroup.com/work/stihl">
-                                <img src="resources/images/stihl.jpg" alt="Stihl">
-                            </a>
-                        </div>
-                        <div class="description">
-                            <h2>Stihl</h2>
-                            <h3>Building brand love in Britain</h3>
-                            <p>Market research, Media campaign, TV commerical production</p>
-                        </div>
+
+                <div class="work-row">
+                    <div class="work-box-mobile">
+                        <a href="https://bwpgroup.com/work/polaroid-boxpark">
+                            <img src="resources/images/polaroid.jpg" alt="Polaroid">
+                        </a>
+                        <h3>Polaroid</h3>
+                        <p>Celebrating brand heritage</p>
+                    </div>
+                    <div class="work-box-mobile">
+                        <a href="https://bwpgroup.com/work/stihl">
+                            <img src="resources/images/stihl.jpg" alt="Stihl">
+                        </a>
+                        <h3>Stihl</h3>
+                        <p>Building brand love in Britain</p>
+                    </div>
+                </div>
+
+                <div class="work-row">
+                    <div class="work-box-mobile">
+                        <a href="https://bwpgroup.com/work/spitalfields">
+                            <img src="resources/images/spitalfields.jpg" alt="Spitalfields">
+                        </a>
+                        <h3>Spitalfields E1</h3>
+                        <p>Repositioning the brand</p>
                     </div>
     
-                    <div class="case">
-                        <div class="pic">
-                            <a href="https://bwpgroup.com/work/spitalfields">
-                                <img src="resources/images/spitalfields.jpg" alt="Spitalfields">
-                            </a>
-                        </div>
-                        <div class="description">
-                            <h2>Spitalfields Market</h2>
-                            <h3>Repositioning the brand</h3>
-                            <p>Brand strategy, Visual identity</p>
-                        </div>
-                    </div>
-    
-                    <div class="case">
-                        <div class="pic">
+                    <div class="work-box-mobile">
                             <a href="https://bwpgroup.com/work/icon-influencing-the-desire-to-shop">
                                 <img src="resources/images/icon.jpg" alt="ICON Outlet at The O2">
                             </a>
-                        </div>
-                        <div class="description">
-                            <h2>ICON Outlet at The O2</h2>
-                            <h3>Influencing the desire to shop</h3>
-                            <p>Influener management, Social media campaign</p>
-                        </div>
+                            <h3>ICON The O2</h3>
+                            <p>Influencing the desire to shop</p>
                     </div>
                 </div>
             </section>
 
             <!--ARTICLES SECTION-->
-
             <section class="articles" id="articles_section">
-                <h1>Articles written by me</h1>
+                <h1>Articles</h1>
+                    <ul>
+                        <li><a href="#">Future of retail</a></li>
+                        <li><a href="article-physical-visitation.html">Increasing physical visitation through online activation</a></li>
+                        <li><a href="article-online-shopping-centre.html">The online shopping centre</a></li> 
+                        <li><a href="#">Consumer shopping trends</a></li>
+                    </ul>
+            </section>   
 
-                <div class="up_row">
-                    <div class="case">
-                        <div class="pic">
-                            <img src="resources/images/woman-holding-two-white-and-beige-shopping-paper-bags-in-974911.jpg" alt="woman holding two shopping bags">
-                        </div>
-                        <div class="description">
-                            <h2>Future of retail</h2>
-                            <p>Key developments shaping the future of the retail sector.[coming soon]</p>
-                        </div>
-                    </div>
 
-                    <div class="case">
-                        <div class="pic">
-                            <a href="/Users/joedurbridge/Documents/Projects/Online_resume/article-physical-visitation.html">
-                                <img src="resources/images/close-up-photo-of-woman-in-black-coat-using-smartphone-787929.jpg" alt="woman using smartphone">
-                            </a>
-                        </div>
-                        <div class="description">
-                            <h2>Increasing physical visitation through online activation</h2>
-                            <p>8 tried and tested ways to drive physical footfall online.</p>
-                        </div>
-                    </div>
+            <!-- RESUME SECTION-->
+            <section class="resume" id="resume-section">
+                <h1>Resume</h1>
+                <p>To view my full resume, click the button below.</p>
+                <div>
+                    <a href="#contact-section"><button class="button" type="button" name="button">View</button></a>
+                </div>
+            </section>
 
-                    <div class="case">
-                        <div class="pic">
-                            <a href="/Users/joedurbridge/Documents/Projects/Online_resume/article-online-shopping-centre.html">
-                                <img src="resources/images/woman-holding-card-while-operating-silver-laptop-919436.jpg" alt="woman holding card while operating laptop">
-                            </a>
-                        </div>
-                        <div class="description">
-                            <h2>The online shopping centre</h2>
-                            <p>Utilising affinity marketing to increase online presence.</p>
-                        </div>
-                    </div>
-
-                    <div class="case">
-                        <div class="pic">
-                            <img src="resources/images/fit-smiling-sportswoman-waiting-at-gym-reception-desk-3757941.jpg" alt="woman waiting at counter">
-                        </div>
-                        <div class="description">
-                            <h2>Consumer shopping trends</h2>
-                            <p>Study into whether the retail shopping seasons are changing.[coming soon]</p>
-                        </div>
-                    </div>
-
-                </section>
-
-                <!--CONTACT SECTION-->
-
-                <section class="contact" id="contact_section">
-                        <h1>Contact</h1>
-                        <div class="contact-container">
-                            <div class="contact_content">
-                            <a href="https://www.linkedin.com/in/joe-durbridge-542b3323/">
-                                    <i class="fab fa-linkedin"></i>
-                                    <span>LinkedIn: jdurbridge</span>
-                                </a>
-                            </div>
-                            <div class="contact_content">
-                                <a href="mailto:jdurbridge@me.com">
-                                    <i class="fas fa-at"></i>
-                                    <span>Email: jdurbridge@me.com</span>
-                                </a>
-                            </div>
-                            <div class="contact_content">
-                            <i class="fas fa-mobile"></i>
-                            <span>Mobile: 07977 449 081</span>
-                            </div>
-                            <div class="contact_content">
-                                <a href="https://github.com/jdurbridge/jdurbridge.github.io">
-                                    <i class="fab fa-github"></i>
-                                    <span>GitHub: jdurbridge</span>
-                                </a>
-                            </div>
-                        </div>
-                </section>
+            <div class="footer-vector">
+                <img src="resources/images/Footer vector.svg" alt="">
+            </div>
 
         </main>
-
-        <!--FOOTER-->
-        <footer>
-            <p>&copy2020 Joe Durbridge. All rights reserved. This website was built from the ground up by me :)</p>
-        
-            <div class="links">
-                <a href="#">Terms</a><a href="#">Privacy</a>
-            </div>
-        </footer>
 
     </body>
 
