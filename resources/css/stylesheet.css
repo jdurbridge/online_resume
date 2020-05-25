@@ -254,6 +254,16 @@ main {
     margin-top: -400px;
 }
 
+@media (max-width: 600px) {
+    .work-row {
+        flex-direction: column;
+    }
+
+    .work-box-mobile {
+        flex-basis: 90%;
+    }
+}
+
 
 
 
