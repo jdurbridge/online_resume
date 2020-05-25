@@ -135,7 +135,7 @@ main {
 .hero i {
     font-size: 3rem;
     color: #E9DF8B;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .bounce {
@@ -222,6 +222,7 @@ main {
 .articles {
     width: 100%;
     margin-top: 10rem;
+    margin-left: 1rem;
 }
 
 .articles ul {
@@ -242,6 +243,7 @@ main {
 .articles a:hover {
     color: #E9DF8B ;
 }
+
 
 /* RESUME SECTION */
 .resume {
@@ -288,17 +290,21 @@ main {
 
     .articles li {
         display: block;
-        max-width: 300;
+        max-width: 300px;
     }
 
     .resume p {
         display: block;
-        max-width: 300px;
+        max-width: 200px;
+    }
+
+    .article-content h3 {
+        line-height: 2rem;
     }
 }
 
 
-/* Article physical */
+/* ARTICLE PAGES */
     .article-content {
         padding:3rem;
         max-width: 900px;
@@ -325,6 +331,8 @@ main {
 
     .signoff {
         margin-top: 20rem;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
     }
 
 
