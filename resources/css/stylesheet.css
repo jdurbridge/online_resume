@@ -96,6 +96,15 @@ header ul a {
     padding: 3rem 2rem;
 }
 
+header ul p {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    display: block;
+    padding: 1rem 2rem;
+}
+
 header ul a:hover {
     color: #E9DF8B;
 }
@@ -254,13 +263,18 @@ main {
     margin-top: -400px;
 }
 
+/* RESPONSIVE SECTION */
 @media (max-width: 600px) {
+    main {
+        margin-left: 1.5rem;
+    } 
+
     .hero h1 {
         font-size: 3rem;
     }
     
     .hero h2 {
-        max-width: 350px;
+        max-width: 300px;
     }
     .work-row {
         flex-direction: column;
@@ -269,6 +283,17 @@ main {
 
     .work-box-mobile {
         flex-basis: 90%;
+        margin-left: 0;
+    }
+
+    .articles li {
+        display: block;
+        max-width: 300;
+    }
+
+    .resume p {
+        display: block;
+        max-width: 300px;
     }
 }
 
@@ -296,6 +321,10 @@ main {
 
     .article-content p {
         line-height: 1.5rem;
+    }
+
+    .signoff {
+        margin-top: 20rem;
     }
 
 
