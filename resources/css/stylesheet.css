@@ -136,7 +136,6 @@ main {
     -o-animation: bounce 0.5s infinite linear;
     -webkit-animation: bounce 0.5s infinite linear;
     animation: bounce 0.5s infinite linear;
-    colr:000;
   }
 
 @-webkit-keyframes bounce {
@@ -272,6 +271,32 @@ main {
         flex-basis: 90%;
     }
 }
+
+
+/* Article physical */
+    .article-content {
+        padding:3rem;
+        max-width: 900px;
+    }
+
+    .article-content h1 {
+        font-family: 'Playfair Display', serif;
+        line-height: 4rem;
+    }
+
+    .article-content h3 {
+        margin-top: 3rem;
+        color: #E9DF8B;
+    }
+
+    .article-content li {
+        padding: 1.5rem;
+    
+    }
+
+    .article-content p {
+        line-height: 1.5rem;
+    }
 
 
 
