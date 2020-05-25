@@ -17,6 +17,7 @@ h1 {
     font-size: 3rem;
     color: #E9DF8B;
     line-height: 2rem;
+    max-width: 900px;
 }
 
 h2 {
@@ -255,8 +256,14 @@ main {
 }
 
 @media (max-width: 600px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    
     .work-row {
         flex-direction: column;
+        justify-content: center;
     }
 
     .work-box-mobile {
