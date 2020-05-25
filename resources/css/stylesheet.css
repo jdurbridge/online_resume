@@ -122,6 +122,53 @@ main {
     line-height: 2.5rem;
 }
 
+.hero i {
+    font-size: 3rem;
+    color: #E9DF8B;
+    margin-top: 4rem;
+}
+
+.bounce {
+    display: inline-block;
+    position: relative;
+    -moz-animation: bounce 0.5s infinite linear;
+    -o-animation: bounce 0.5s infinite linear;
+    -webkit-animation: bounce 0.5s infinite linear;
+    animation: bounce 0.5s infinite linear;
+    colr:000;
+  }
+
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+
 /*VECTOR IMAGE */
 .vector-image {
     position: absolute;
@@ -132,31 +179,11 @@ main {
     z-index: -1;
 }
 
-/* CONTACT SECTION */
 
-.contact {
-    margin-top: 20rem;
-    z-index: 4;
-}
-
-.contact li {
-    list-style: none;
-    margin-top: 3rem;
-}
-
-.contact a,
-.contact p {
-    color: #fff;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    color: #E9DF8B;
-}
 
 /* WORK SECTION */
 .work {
-    margin-top: 10rem;
+    margin-top: 30rem;
 }
 
 .work-row {
