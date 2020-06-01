@@ -116,10 +116,6 @@ header ul {
     transition: 0.2s ease-out;
 }
 
-header ul p {
-    left: 0;
-}
-
 main {
     position: relative;
     top: 6rem;
@@ -290,6 +286,10 @@ main {
     main {
         margin-left: 1.5rem;
     } 
+
+    header ul p {
+        padding: 1rem 0rem;
+    }
 
     .hero h1 {
         font-size: 3rem;
