@@ -50,6 +50,7 @@ p {
     border-radius: 10px;
     transition: 100ms;
     transform: scale(1);
+    cursor: pointer;
 }
 
 .button:hover {
@@ -122,6 +123,9 @@ main {
 }
 
 /* HERO SECTION */
+.hero {
+    height: 50vh;
+}
 .hero h1 {
     font-size: 6rem;
     line-height: 6rem;
@@ -141,10 +145,10 @@ main {
 .bounce {
     display: inline-block;
     position: relative;
-    -moz-animation: bounce 0.5s infinite linear;
-    -o-animation: bounce 0.5s infinite linear;
-    -webkit-animation: bounce 0.5s infinite linear;
-    animation: bounce 0.5s infinite linear;
+    -moz-animation: bounce 0.8s infinite linear;
+    -o-animation: bounce 0.8s infinite linear;
+    -webkit-animation: bounce 0.8s infinite linear;
+    animation: bounce 0.8s infinite linear;
   }
 
 @-webkit-keyframes bounce {
@@ -186,13 +190,22 @@ main {
     right: 0;
     top: 200px;
     z-index: -1;
+    cursor: pointer;
 }
 
+/* Jump to section */
+.jump-to {
 
+}
+
+/* Projects section */
+.projects {
+    margin-top: 40rem;
+}
 
 /* WORK SECTION */
 .work {
-    margin-top: 30rem;
+    margin-top: 10rem;
 }
 
 .work-row {
@@ -219,7 +232,6 @@ main {
 }
 
 
-/* Projects section */
 
 
 /* Articles section */
@@ -339,6 +351,16 @@ main {
         text-orientation: upright;
     }
 
+    .article-content img {
+        padding: 1rem;
+        margin: 1rem;
+        max-width: 700px;
+    }
+
+    .article-content a {
+        text-decoration: none;
+        color: aquamarine;
+    }
 
 
 
