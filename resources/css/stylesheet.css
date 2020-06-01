@@ -116,6 +116,10 @@ header ul {
     transition: 0.2s ease-out;
 }
 
+header ul p {
+    left: 0;
+}
+
 main {
     position: relative;
     top: 6rem;
