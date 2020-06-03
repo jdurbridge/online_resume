@@ -45,7 +45,7 @@ header .menu-icon .nav-icon:after {
      width: 100vw;
      margin: 0;
      padding: 2rem 0;
-     background-color: #22223B;
+     background-color: #E9DF8B
  }
 
  header .menu-btn:checked ~ .menu-icon .nav-icon { /* Middle line */

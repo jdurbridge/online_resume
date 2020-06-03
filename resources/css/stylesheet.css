@@ -88,32 +88,29 @@ header ul {
     overflow: hidden;
 }
 
-header ul a {
-    text-decoration: none;
-    color: #fff;
+.menu-title {
+    color: #000;
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    display: block;
-    padding: 3rem 2rem;
-}
-
-header ul p {
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    display: block;
     padding: 1rem 2rem;
 }
 
+header ul a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    display: block;
+    padding: 2.5rem 2rem;
+}
+
 header ul a:hover {
-    color: #E9DF8B;
+    color: rgb(82, 82, 78);
 }
 
 header ul {
     clear: both;
     max-height: 0;
-    transition: 0.2s ease-out;
+    transition: 0.3s ease-in-out;
 }
 
 main {
@@ -193,14 +190,10 @@ main {
     cursor: pointer;
 }
 
-/* Jump to section */
-.jump-to {
-
-}
 
 /* Projects section */
 .projects {
-    margin-top: 40rem;
+    margin-top: 20rem;
 }
 
 /* WORK SECTION */
@@ -211,12 +204,12 @@ main {
 .work-row {
     display: flex;
     padding: 1rem;
+    margin-top: -1.5rem;
 }
 
 .work-box-mobile {
     flex-basis: 40%;
     background-color:white;
-    padding: 1rem;
     margin: 1rem;
     border-radius: 5px;
     box-shadow: 0 7px 30px rgba(52, 31, 97, 0.1);
@@ -229,6 +222,7 @@ main {
 .work-box-mobile h3,
 .work-box-mobile p {
     color: #303030;
+    padding: 0 1rem;
 }
 
 
@@ -243,10 +237,11 @@ main {
 
 .articles ul {
     list-style: none;
+    padding-left: 0;
 }
 
 .articles li {
-    margin-bottom: 3rem;
+    margin-bottom: 3rem;    
 }
 
 .articles a {
@@ -269,7 +264,8 @@ main {
 
 .resume p,
 .resume button {
-    margin-left: 3rem;
+    margin-top: 0.5rem;
+   
 }
 
 .footer-vector {
@@ -281,11 +277,21 @@ main {
     margin-top: -400px;
 }
 
+.signoff {
+    margin-top: 20rem;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
 /* RESPONSIVE SECTION */
 @media (max-width: 600px) {
     main {
         margin-left: 1.5rem;
     } 
+
+    .logo a {
+        font-size: 1.25rem;
+    }
 
     .hero h1 {
         font-size: 3rem;
@@ -317,6 +323,12 @@ main {
     .article-content h3 {
         line-height: 2rem;
     }
+
+    .article-content {
+        padding: 0;
+        margin-left: -3rem;
+    }
+
 }
 
 
@@ -338,17 +350,10 @@ main {
 
     .article-content li {
         padding: 1.5rem;
-    
     }
 
     .article-content p {
         line-height: 1.5rem;
-    }
-
-    .signoff {
-        margin-top: 20rem;
-        writing-mode: vertical-lr;
-        text-orientation: upright;
     }
 
     .article-content img {
