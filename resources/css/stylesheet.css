@@ -217,7 +217,8 @@ main {
 
 .work-box-mobile img {
     width: 100%;
-    max-height: 250px;
+    max-height: 300px;
+    object-fit: cover;
 }
 
 .work-box-mobile h3,
@@ -236,15 +237,6 @@ main {
     margin-left: 1rem;
 }
 
-.articles ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.articles li {
-    margin-bottom: 3rem;    
-}
-
 .articles a {
     color: #fff;
     text-decoration: none;
@@ -256,6 +248,9 @@ main {
     color: #E9DF8B ;
 }
 
+.moreblog {
+    text-align: left;
+}
 
 /* RESUME SECTION */
 .resume {
@@ -279,7 +274,8 @@ main {
 }
 
 .signoff {
-    margin-top: 20rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
     writing-mode: vertical-lr;
     text-orientation: upright;
 }
