@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Joe Dubridge Online Resume</title>
+        <link rel="stylesheet" type="text/css" href="resources/css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/menu.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/36493425e0.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <!--HEADER-->
+        <header>
+            <div class="logo">
+                <a href="index.html">JoeDurbridge</a>
+            </div>
+            <nav>
+                <input class="menu-btn" type="checkbox" id="menu-btn"/>
+                <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+                <ul>
+                    <li><a href="mailto:jdurbidge@me.com">Email</a></li>
+                    <li><a href="https://www.linkedin.com/in/joe-durbridge-542b3323/">LinkedIn</a></li>
+                    <li><a href="https://github.com/jdurbridge/jdurbridge.github.io">GitHub</a></li>
+                    <li><a href="resources/documents/Joe Durbridge CV 2020.pdf">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <!--MAIN-->
+    <main>
+        <section class="blog-page">
+            <h1>Blog</h1>
+
+            <!-- Control buttons -->
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('skills')"> Skills</button>
+                <button class="btn" onclick="filterSelection('career')"> Career</button>
+                <button class="btn" onclick="filterSelection('life')"> Life</button>
+                <button class="btn" onclick="filterSelection('agency')"> Agency</button>
+            </div>
+        
+    
+            <!-- Blog articles -->
+            <!-- The filterable elements. Note that some have multiple class names used if they belong to multiple categories -->
+            <div class="blog-section">
+                <div class="blog-item filterDiv skills" id="blog-1"> 
+                    <img src="resources/images/woman-holding-card-while-operating-silver-laptop-919436.jpg" alt="white rose and red smoke">
+                    <div class="blog-text">
+                        <h3>Time management</h3>
+                        <p>The age old daily challenge. So many tasks and so little time. Here's a quick guide to managing your time and keeping your sanity.</p>
+                    </div>
+                </div>
+                <div class="blog-item filterDiv career" id="blog-2">
+                    <img src="resources/images/woman-holding-card-while-operating-silver-laptop-919436.jpg" alt="white rose and red smoke">
+                    <div class="blog-text">
+                        <h3>Job crafting</h3>
+                        <p>It's a new phrase but what does it mean? Learn the possibilities by crafting your ideal job role within your agency.</p>
+                    </div>
+                </div>
+                <div class="blog-item filterDiv life" id="blog-3">
+                    <img src="resources/images/woman-holding-card-while-operating-silver-laptop-919436.jpg" alt="white rose and red smoke">
+                    <div class="blog-text">
+                        <h3>Eat, sleep, workout repeat</h3>
+                        <p>The three essentials for a healthy happy life are simple yet rarely achieved. Here's some quick tips to form a healthy life routine.</p>
+                    </div>
+                </div>
+                <div class="blog-item filterDiv skills" id="blog-4">
+                    <img src="resources/images/woman-holding-card-while-operating-silver-laptop-919436.jpg" alt="white rose and red smoke">
+                    <div class="blog-text">
+                        <h3>Understanding colours</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque reprehenderit, dolor aliquid atque odio neque.</p>
+                    </div>
+                </div>
+                <div class="blog-item filterDiv skills agency" id="blog-5">
+                    <img src="resources/images/woman-holding-card-while-operating-silver-laptop-919436.jpg" alt="white rose and red smoke">
+                    <div class="blog-text">
+                        <h3>How to smash the tea round</h3>
+                        <p>It's the fuel that drives agency productivity but often the tea round isn;t up to par. Don't fear the Tea Master is here.</p>
+                    </div>
+                </div>
+            </div>
+       
+    </main>
+                
+        </Section>
+    </main>
+</body>
+</html>
