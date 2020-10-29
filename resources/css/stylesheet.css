@@ -366,7 +366,69 @@ main {
 
 
 
+    /* Blog section CSS */
 
+    .blog-section {
+        padding: 1rem;
+    }
+    
+    .blog-item {
+        margin: 1rem;
+        background-color: rgb(245, 168, 206);
+        display: flex;
+    }
+    
+    .blog-item img {
+        height: 8rem;
+        width: 12rem;
+    }
+    
+    .blog-item h3 {
+        padding-left: 1rem;
+    }
+    
+    .blog-item p {
+        padding-left: 1rem;
+    }
+
+    /* Blog Filter Function */
+.container {
+    overflow: hidden;
+  }
+ 
+#myBtnContainer {
+    margin-left: 2rem;
+}
+  
+.filterDiv {
+      display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: flex;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color:rgb(64, 216, 243);
+    color: white;
+  }
 
 
 
